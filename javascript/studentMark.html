@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+      <input type="text" placeholder="Enter you mark" id="mark" />
+      <button onclick="find()">Calculate Grade</button>
+      <h1 id="d"></h1>
+    <script>
+      function find() {
+        let mark = parseInt(document.getElementById("mark").value);
+        if (mark >= 95) {
+          console.log("O");
+          document.getElementById('d').innerHTML="O"
+        } else if (mark >= 90) {
+          console.log("A+");
+          document.getElementById('d').innerHTML="A+"
+        } else if (mark >= 85) {
+          console.log("A");
+          document.getElementById('d').innerHTML="A"
+        } else if (mark >= 80) {
+          console.log("B+");
+          document.getElementById('d').innerHTML="B+"
+        } else if (mark >= 75) {
+          console.log("B");
+          document.getElementById('d').innerHTML="B"
+        } else if (mark >= 70) {
+          console.log("C+");
+          document.getElementById('d').innerHTML="C+"
+        } else if (mark >= 60) {
+          console.log("C");
+          document.getElementById('d').innerHTML="C"
+        } else if (mark >= 50) {
+          console.log("D");
+          document.getElementById('d').innerHTML="D"
+        } else {
+          console.log("failed");
+          document.getElementById('d').innerHTML="FAILED"
+        }
+      }
+    </script>
+  </body>
+</html>
